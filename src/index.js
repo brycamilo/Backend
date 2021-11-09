@@ -13,6 +13,6 @@ app.use (bodyparser.json)
 app.use (cors({origen:"*"}))
 
 
-app.listen(app.get ( 'Port'),()=>{
+app.listen(app.get('Port'),()=>{
     console.log('servidor escuchando por el puertooo',app.get('Port'))
 })
