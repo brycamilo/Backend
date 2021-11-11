@@ -6,6 +6,7 @@ const VentasSchemma = mongoose.Schema({
     producto:  String,
     referencia:  Number, 
     precio:  Number,
+    total:Number,
     descripcion:  String,
     vendedor:  String,
     estado_venta: String
