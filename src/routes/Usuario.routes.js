@@ -1,13 +1,17 @@
-/* const express = require('express');
-const router = express.Router();
-const UsuarioCtrl1 =require('../controllers/Usuario.controller')
+const {Router} = require("express")
+const router = Router()
 
-router.post('/crearUsuario', UsuarioCtrl1.createOne);
-router.post('/login',UsuarioCtrl1.login)
 
-router.get('/Hola',(req,res,next)=>{
-    res.json({messaje: "Hola Mundo"})
-    console.log("Hola mundo")
-})
+const UsuarioCtrl = require("../controllers/Usuario.controller")
 
-module.exports = router */
+
+router.post("/crear",UsuarioCtrl.crearUsuario)
+router.post("/login",UsuarioCtrl.login)
+router.get("/listar",UsuarioCtrl.listar)
+router.get("/listar/:id",UsuarioCtrl.listarid)
+router.delete("/delete/:id",UsuarioCtrl.eliminar)
+router.put("/actualizar/:id",UsuarioCtrl.actualizar)
+router.get("/buscar/:correo",UsuarioCtrl.buscarusuario)
+
+ 
+module.exports = router

@@ -5,6 +5,7 @@ const cors = require('cors')
 const bodyparser = require('body-parser')
 require('./database')
 
+const ventasRoutes = require("./routes/Ventas.routes");
 
 app.set('Port',4000)
 
@@ -14,9 +15,10 @@ app.use(bodyparser.urlencoded(
 app.use (bodyparser.json())
 app.use (cors({origen:"*"}))
 
-
-//app.use('/usuario',require('./routes/Usuario.routes'))
-app.use('/users',require('./routes/Users.routes'))
+//Rutas
+app.use('/usuario',require('./routes/Usuario.routes'))
+//app.use('/users',require('./routes/Usuario.routes'))
+app.use("/api/ventas", ventasRoutes);
 
 
 app.listen(app.get('Port'),()=>{

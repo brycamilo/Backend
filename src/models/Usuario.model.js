@@ -12,4 +12,4 @@ const UsuarioSchemma = mongoose.Schema({
     activo:Boolean
 });
   
-module.exports = mongoose.model("Usuario", UsuarioSchemma);
+module.exports = mongoose.model("usuario", UsuarioSchemma);

@@ -1,6 +1,6 @@
-const {Router}=require('express')
+/* const {Router}=require('express')
 const router = Router ()
-const UsersCtrl =require('../controllers/Users.controller')
+const UsersCtrl =require('../controllers/Usuario.controller')
 
 router.post('/crear',UsersCtrl.crear)
 router.get('/listar',UsersCtrl.listar)
@@ -8,4 +8,4 @@ router.get('/listar/:id',UsersCtrl.listarid)
 router.get
 
 
-module.exports = router
+module.exports = router */

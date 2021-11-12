@@ -2,14 +2,15 @@ const mongoose = require('mongoose')
 const {Schema} = mongoose
 
 const VentasSchemma = mongoose.Schema({
-    fecha_Venta: String, 
-    producto:  String,
-    referencia:  Number, 
-    precio:  Number,
-    total:Number,
-    descripcion:  String,
-    vendedor:  String,
-    estado_venta: String
+    Fecha_Venta: Date, 
+    Producto:  String,
+    Referencia:  Number, 
+    Precio:  Number,
+    Total:Number,
+    Descripcion:  String,
+    Vendedor:  String,
+    Estado_venta: String,
+    Cantidad:Number
 })
   
-module.exports = mongoose.model("Usuario", UsuarioSchemma);
+module.exports = mongoose.model("Ventas", VentasSchemma);

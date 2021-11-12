@@ -42,4 +42,4 @@ exports.actualizar=async(req,res)=>{
         mensaje:'Usuario actualizado'
     })
 }
-}
+} 
